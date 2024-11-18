@@ -1,0 +1,174 @@
+body{
+    background-image: url('/tk_landing/img/Gemini_Generated_Image_8bx5ub8bx5ub8bx5.jpg');
+}
+a.nav-link{
+    color: #C7C7C7;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "IBM Plex Mono", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+button.btn.btn-dark{
+    background-color: #000000;
+    font-family: "IBM Plex Mono", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 5px;
+}
+ion-icon {
+    font-size: 1.2rem; /* Adjust size */
+    vertical-align: middle; /* Aligns icon with text */
+    margin-left: 5px; /* Optional: adds spacing between text and icon */
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; /* Aligns the navbar content to the right */
+    margin-right: 180px; /* Adjust this value for the desired padding */
+  }
+a.navbar-brand{
+    margin-left: 120px;
+} 
+/* Hide dropdown menus by default */
+/* Hide dropdown menus by default */
+.nav-item .dropdown-menu {
+    display: none; /* Hide the dropdown menu initially */
+    position: absolute;
+    background-color: white; /* Set white background for the dropdown */
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    border-radius: 0px;
+    width: 200px; /* Adjust the width as needed */
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition from opacity 0 to 1 */
+    visibility: hidden; /* Keep it invisible initially */
+    z-index: 10; /* Ensure dropdown appears above other elements */
+  }
+  
+  /* Show dropdown when hovering over the nav-item */
+  .nav-item:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu */
+    opacity: 1; /* Make it fully visible */
+    visibility: visible; /* Ensure the dropdown is visible */
+  }
+  
+  /* Style for each dropdown item */
+  .nav-item .dropdown-menu li {
+    padding: 8px 18px;
+    color: #111; /* Set text color to dark */
+    text-align: left;
+    cursor: pointer; /* Change cursor to pointer to indicate clickable items */
+    border-bottom: 1px solid #ddd; /* Add a line after each item */
+  }
+  
+  /* Remove border from the last item */
+  .nav-item .dropdown-menu li:last-child {
+    border-bottom: none; /* Remove the border from the last item */
+  }
+  
+  /* Hover effect for dropdown items */
+  .nav-item .dropdown-menu li:hover {
+    background-color: #ff6600; /* Orange background on hover */
+    color: white; /* White text color on hover */
+  }
+/* Hide the sub-dropdown menus by default */
+.nav-item .sub-dropdown-menu {
+    display: none; /* Hide the sub-dropdown menu initially */
+    position: absolute;
+    background-color: white; /* Set white background for the sub-dropdown */
+    padding: 10px;
+    list-style-type: none;
+    margin: 5px;
+    border-radius: 0px;
+    width: 200px; /* Adjust the width as needed */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out; /* Smooth transition for sub-dropdown */
+    visibility: hidden; /* Keep it invisible initially */
+    z-index: 10; /* Ensure sub-dropdown appears above other elements */
+  }
+  
+  /* Show sub-dropdown when hovering over the parent item */
+  .nav-item .dropdown-item:hover .sub-dropdown-menu {
+    display: block; /* Show the sub-dropdown menu */
+    opacity: 1; /* Make it fully visible */
+    visibility: visible; /* Ensure the sub-dropdown is visible */
+  }
+  
+  /* Position the sub-dropdown for Cybersecurity to the right */
+  .nav-item .dropdown-item:nth-child(1):hover .sub-dropdown-menu {
+    left: 100%; /* Position the sub-dropdown to the right of the parent item */
+    top: 0;
+  }
+  
+  /* Position the sub-dropdown for Online Safety at the bottom */
+  .nav-item .dropdown-item:nth-child(3):hover .sub-dropdown-menu {
+    left: 0;
+    top: 100%; /* Position the sub-dropdown below the parent item */
+  }
+  
+  /* Style for each item in the sub-dropdown */
+  .nav-item .sub-dropdown-menu li {
+    padding: 8px 18px;
+    color: #111; /* Set text color to dark */
+    text-align: left;
+    cursor: pointer; /* Change cursor to pointer to indicate clickable items */
+    border-bottom: 1px solid #ddd; /* Add a line after each item */
+  }
+  
+  /* Remove border from the last sub-dropdown item */
+  .nav-item .sub-dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hover effect for sub-dropdown items */
+  .nav-item .sub-dropdown-menu li:hover {
+    background-color: #ff6600; /* Orange background on hover */
+    color: white; /* White text color on hover */
+  }
+  /* Ensure dropdown menu appears below the navbar when in mobile view */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        margin-right: 0; /* Remove any margin for mobile */
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-start; /* Align to the left for better mobile experience */
+    }
+
+    /* Dropdown menu styling for mobile view */
+    .nav-item .dropdown-menu {
+        position: static; /* Make dropdown menu flow with the document */
+        width: 100%; /* Make it full width */
+        opacity: 1; /* Ensure it shows without transition effect */
+        visibility: visible; /* Ensure visibility */
+    }
+
+    .nav-item .sub-dropdown-menu {
+        position: static; /* Make sub-dropdown menu follow the document flow */
+        width: 100%; /* Make sub-dropdown full width */
+    }
+}
+
+/* Button to toggle navbar in mobile */
+.navbar-toggler {
+    border: none;
+    background-color: #111;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+  
+  
+  
