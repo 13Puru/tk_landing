@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 body{
     background-image: url('/tk_landing/img/Gemini_Generated_Image_8bx5ub8bx5ub8bx5.jpg');
+    background-repeat: none;
+    color: white;
+    font-family: "IBM Plex Mono", Sans-serif;
+
+}
+nav.navbar-dark{
+  padding: 0px 8px;
+  font-family: "IBM Plex Mono", Sans-serif;
+
 }
 a.nav-link{
     color: #C7C7C7;
@@ -7,36 +17,40 @@ a.nav-link{
     padding-right: 7px;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: "IBM Plex Mono", Sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     display: block;
     position: relative;
     z-index: 1;
+    margin-top: 10px;
     text-decoration: none;
     box-sizing: border-box;
 }
-button.btn.btn-dark{
-    background-color: #000000;
-    font-family: "IBM Plex Mono", Sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 5px;
+.nav-link button.btn-dark {
+  padding: 7px 26px;
+  font-weight: bold;
+  background-color: #000000;
+  font-family: "IBM Plex Mono", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  border: none;
 }
 ion-icon {
     font-size: 1.2rem; /* Adjust size */
     vertical-align: middle; /* Aligns icon with text */
     margin-left: 5px; /* Optional: adds spacing between text and icon */
   }
-
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; /* Aligns the navbar content to the right */
-    margin-right: 180px; /* Adjust this value for the desired padding */
+    margin-right: 110px; /* Adjust this value for the desired padding */
   }
 a.navbar-brand{
-    margin-left: 120px;
+    margin-left: 80px;
 } 
 /* Hide dropdown menus by default */
 /* Hide dropdown menus by default */
@@ -44,13 +58,13 @@ a.navbar-brand{
     display: none; /* Hide the dropdown menu initially */
     position: absolute;
     background-color: white; /* Set white background for the dropdown */
-    padding: 10px;
+    padding: 0px;
     list-style-type: none;
     margin: 0;
     border-radius: 0px;
     width: 200px; /* Adjust the width as needed */
     opacity: 0; /* Start with opacity 0 */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition from opacity 0 to 1 */
+    transition: opacity 2s ease-in-out; /* Smooth transition from opacity 0 to 1 */
     visibility: hidden; /* Keep it invisible initially */
     z-index: 10; /* Ensure dropdown appears above other elements */
   }
@@ -78,17 +92,17 @@ a.navbar-brand{
   
   /* Hover effect for dropdown items */
   .nav-item .dropdown-menu li:hover {
-    background-color: #ff6600; /* Orange background on hover */
-    color: white; /* White text color on hover */
+    background-color: #ff9650; /* Orange background on hover */
+    color: rgb(0, 0, 0); /* White text color on hover */
   }
 /* Hide the sub-dropdown menus by default */
 .nav-item .sub-dropdown-menu {
     display: none; /* Hide the sub-dropdown menu initially */
     position: absolute;
     background-color: white; /* Set white background for the sub-dropdown */
-    padding: 10px;
+    padding: 0px;
     list-style-type: none;
-    margin: 5px;
+    margin: 0px;
     border-radius: 0px;
     width: 200px; /* Adjust the width as needed */
     opacity: 0;
@@ -110,10 +124,10 @@ a.navbar-brand{
     top: 0;
   }
   
-  /* Position the sub-dropdown for Online Safety at the bottom */
+  /* Position the sub-dropdown for Online Safety at the right */
   .nav-item .dropdown-item:nth-child(3):hover .sub-dropdown-menu {
-    left: 0;
-    top: 100%; /* Position the sub-dropdown below the parent item */
+    left: 100%;
+    top: 66%; /* Position the sub-dropdown below the parent item */
   }
   
   /* Style for each item in the sub-dropdown */
@@ -132,43 +146,25 @@ a.navbar-brand{
   
   /* Hover effect for sub-dropdown items */
   .nav-item .sub-dropdown-menu li:hover {
-    background-color: #ff6600; /* Orange background on hover */
-    color: white; /* White text color on hover */
+    background-color: #ff9650; /* Orange background on hover */
+    color: rgb(0, 0, 0); /* White text color on hover */
   }
-  /* Ensure dropdown menu appears below the navbar when in mobile view */
-@media (max-width: 992px) {
-    .navbar-collapse {
-        margin-right: 0; /* Remove any margin for mobile */
-    }
-
-    .navbar-expand-lg .navbar-collapse {
-        justify-content: flex-start; /* Align to the left for better mobile experience */
-    }
-
-    /* Dropdown menu styling for mobile view */
-    .nav-item .dropdown-menu {
-        position: static; /* Make dropdown menu flow with the document */
-        width: 100%; /* Make it full width */
-        opacity: 1; /* Ensure it shows without transition effect */
-        visibility: visible; /* Ensure visibility */
-    }
-
-    .nav-item .sub-dropdown-menu {
-        position: static; /* Make sub-dropdown menu follow the document flow */
-        width: 100%; /* Make sub-dropdown full width */
-    }
-}
-
-/* Button to toggle navbar in mobile */
-.navbar-toggler {
-    border: none;
-    background-color: #111;
-}
-
-.navbar-toggler-icon {
-    background-color: #fff;
-}
-
-  
+  .con{
+    padding: 0px 10px;
+  }
+ .para{
+  display:inline-flex;
+  margin-top: 40px;
+  margin-left: 140px;
+  font-size: 12px;
+  padding: 10px 0px;
+ } 
+ .h1{
+  margin-top: 20px;
+  margin-left: 120px;
+ }
+ .h1 b{
+  font-size: 44px;
+ }
   
   
