@@ -262,3 +262,14 @@ a.learn-more {
   text-align: left;
   margin-top: 10px;
 }
+.col-md-6.text-center {
+  background-color: #ffdaf0; 
+  padding: 20px;           
+  border: none;  
+  border-radius: 20px;      
+  color: black;
+  margin-left: 2px ;
+}
+.row.g-4{
+  display: inline-flex;
+}
