@@ -62,11 +62,12 @@ a.navbar-brand{
     list-style-type: none;
     margin: 0;
     border-radius: 0px;
-    width: 200px; /* Adjust the width as needed */
+    width: 185px; /* Adjust the width as needed */
     opacity: 0; /* Start with opacity 0 */
     transition: opacity 2s ease-in-out; /* Smooth transition from opacity 0 to 1 */
     visibility: hidden; /* Keep it invisible initially */
     z-index: 10; /* Ensure dropdown appears above other elements */
+    font-size: 14px;
   }
   
   /* Show dropdown when hovering over the nav-item */
@@ -188,33 +189,75 @@ a.navbar-brand{
   margin-left: 119px ;
   margin-top: 20px;
  }
- .card-container {
+ .scroll-container {
+  margin-top: 120px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  gap: 50px;
+  position: relative;
+  transition: transform 1s ease-in-out;
 }
-.card {
-  width: calc(25% - 20px);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+.custom-card {
+  border-radius: 20px;
+  padding: 12px 20px;
+  min-width: 500px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
 }
-.card:hover {
-  transform: scale(1.05);
+
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
 }
-.card-body {
-  padding: 15px;
+
+.card-1 {
+  background-color: #ffa34d;
+  color: black;
 }
-@media (max-width: 1024px) {
-  .card {
-      width: calc(50% - 20px);
-  }
+
+.card-2 {
+  background-color: #f2f2f2;
+  color: black;
 }
-@media (max-width: 768px) {
-  .card {
-      width: 100%;
-  }
+
+.card-3 {
+  background-color: #fff500;
+  color: black;
+}
+
+.card-4 {
+  background-color: #ff9fe1;
+  color: black;
+}
+
+.card-5 {
+  background-color: #ffa34d;
+  color: black;
+}
+
+.card-6 {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.learn-more {
+  margin-top: auto;
+  font-weight: bold;
+}
+
+a.learn-more {
+  text-decoration: none;
+  color: inherit;
+}
+
+.b {
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
 }

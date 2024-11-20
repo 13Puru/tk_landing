@@ -1,26 +1,28 @@
-const cardContainer = document.querySelector('.card-container');
-const cards = cardContainer.querySelectorAll('.card');
-let currentIndex = 0;
+const scrollContent = document.querySelector('.scroll-content');
+    const cards = document.querySelectorAll('.custom-card');
+    const cardWidth = cards[0].offsetWidth + 50; // Card width + gap
+    let isTransitioning = false;
 
-// Set initial active card
-cards[currentIndex].classList.add('active');
+    // Function to trigger scroll animation
+    function scrollCards() {
+      if (isTransitioning) return;
+      isTransitioning = true;
 
-function updateCards() {
-  // Remove the exiting class from all cards
-  cards.forEach((card) => card.classList.remove('exiting'));
+      // Apply transformation for scrolling
+      scrollContent.style.transition = "transform 1s ease-in-out";
+      scrollContent.style.transform = `translateX(-${cardWidth}px)`;
 
-  // Mark the current card as exiting
-  const currentCard = cards[currentIndex];
-  currentCard.classList.remove('active');
-  currentCard.classList.add('exiting');
+      setTimeout(() => {
+        // Move the first card to the end
+        scrollContent.appendChild(scrollContent.firstElementChild);
 
-  // Update the index
-  currentIndex = (currentIndex + 1) % cards.length;
+        // Reset scroll position without animation
+        scrollContent.style.transition = "none";
+        scrollContent.style.transform = "translateX(0)";
 
-  // Mark the next card as active
-  const nextCard = cards[currentIndex];
-  nextCard.classList.add('active');
-}
+        isTransitioning = false;
+      }, 1000); // Wait for the transition to finish
+    }
 
-// Change cards every 2 seconds (1-second pause + 1-second transition)
-setInterval(updateCards, 2000);
+    // Start scrolling every 2 seconds
+    setInterval(scrollCards, 2000);
