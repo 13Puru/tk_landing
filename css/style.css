@@ -52,8 +52,7 @@ ion-icon {
 a.navbar-brand{
     margin-left: 80px;
 } 
-/* Hide dropdown menus by default */
-/* Hide dropdown menus by default */
+
 .nav-item .dropdown-menu {
     display: none; /* Hide the dropdown menu initially */
     position: absolute;
@@ -268,7 +267,7 @@ a.learn-more {
   border: none;
   border-radius: 20px;
   color: black;
-  margin: 0 10px; /* Horizontal margin for spacing */
+  margin: 0 10px;
   flex: 1; /* Ensure all cards are evenly spaced */
   text-align: center;
   max-width: 250px; /* Adjust card width for consistency */
@@ -276,12 +275,12 @@ a.learn-more {
 }
 
 .row.g-4 {
-  display: flex; /* Flex layout to align items in a row */
-  justify-content: space-between; /* Distribute cards evenly */
-  align-items: flex-start; /* Align items to the top */
-  gap: 15px; /* Add consistent spacing between items */
-  padding: 20px; /* Add padding around the row */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 15px; 
+  padding: 20px; 
+  flex-wrap: wrap; 
 }
 
 .col-lg-6 {
@@ -289,20 +288,20 @@ a.learn-more {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%; /* Ensure full width for header and button */
-  padding: 20px 10px; /* Add padding around the content */
+  width: 100%; 
+  padding: 20px 10px; 
 }
 
 h2.mb-4 {
   margin-bottom: 16px;
   font-weight: bold;
-  text-align: center; /* Center align heading */
-  color: black; /* Ensure contrast */
+  text-align: center; 
+  color: black; 
 }
 
 .btn.btn-primary {
   margin-top: 10px;
-  align-self: flex-end; /* Center the button */
+  align-self: flex-end; 
   background-color: black;
   color: white;
   padding: 10px 20px;
