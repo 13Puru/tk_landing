@@ -191,6 +191,7 @@ a.navbar-brand{
  }
  .scroll-container {
   margin-top: 120px;
+  margin-bottom: 120px;
   overflow: hidden;
   position: relative;
   width: 100%;
